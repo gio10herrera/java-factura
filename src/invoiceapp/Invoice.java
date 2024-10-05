@@ -11,6 +11,13 @@ public class Invoice {
 
     public static void main(String[] args) {
         inputInvoiceData();
+        calculateTotalPerProduct();
+    }
+
+    private static void calculateTotalPerProduct() {
+        for (int i = 0; i < 3; i++) {
+            totalPerProduct[i] = (unitPriceProduct[i] * quantityPerProduct[i]);
+        }
     }
 
     private static void inputInvoiceData() {
